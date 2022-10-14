@@ -5,12 +5,14 @@ public class Customer {
 	private int edad;
 	private char sexo;
 	private String estado;
+	private int prima;
 
 	public Customer(int edad, char sexo, String estado) {
 		super();
 		this.edad = edad;
 		this.sexo = sexo;
 		this.estado = estado;
+		this.setPrima(500);
 	}
 
 	public int getEdad() {
@@ -35,6 +37,14 @@ public class Customer {
 
 	public void setEstado(String estado) {
 		this.estado = estado;
+	}
+
+	public int getPrima() {
+		return prima;
+	}
+
+	public void setPrima(int prima) {
+		this.prima = prima;
 	}
 
 }
