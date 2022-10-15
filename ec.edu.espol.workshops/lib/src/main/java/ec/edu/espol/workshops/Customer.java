@@ -6,13 +6,14 @@ public class Customer {
 	private char sexo;
 	private String estado;
 	private int prima;
+	private boolean permiso;
 
-	public Customer(int edad, char sexo, String estado) {
+	public Customer(int edad, char sexo, String estado, boolean permiso) {
 		super();
 		this.edad = edad;
 		this.sexo = sexo;
 		this.estado = estado;
-		this.setPrima(500);
+		this.permiso = permiso;
 	}
 
 	public int getEdad() {
@@ -45,6 +46,13 @@ public class Customer {
 
 	public void setPrima(int prima) {
 		this.prima = prima;
+	}
+	public boolean isPermiso() {
+		return permiso;
+	}
+
+	public void setPermiso(boolean permiso) {
+		this.permiso = permiso;
 	}
 
 }
