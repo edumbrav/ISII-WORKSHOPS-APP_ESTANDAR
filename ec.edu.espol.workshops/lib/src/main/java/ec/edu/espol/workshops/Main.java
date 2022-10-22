@@ -1,6 +1,6 @@
 package ec.edu.espol.workshops;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 		Customer c = new Customer(89,'F',"not married", false);
@@ -16,7 +16,7 @@ public class main {
 
 			}
 			if(!valor) {
-				System.out.println("No puede tener seguro porque el cliente tiene "+c.getEdad()+" años");
+				System.out.println("No puede tener seguro porque el cliente tiene "+c.getEdad()+" aï¿½os");
 			}
 
 		} 
