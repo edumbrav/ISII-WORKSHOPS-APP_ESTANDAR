@@ -1,9 +1,7 @@
 package ec.edu.espol.workshops;
 
 public class CarInsurance {
-	
-	private int prima;
-	
+		
 	public static boolean comprobar(Customer c) {
 		if(c.getEdad()<80) {
 			return true;
