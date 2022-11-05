@@ -1,0 +1,16 @@
+Feature: Calculate the insurance prime for a customer
+
+Scenario: The customer obtains insurance with a very high premium
+Given The customer is a male under 25 y/o, isn't married and has a car license
+When Calculate the premium
+Then The customer obtains the insurance with a premium of 2000
+
+Scenario Outline: The customer obtains or not an insurance
+Given The customer is a "<sexo>" is "<edad>" is "<estado>" and has car license "<permiso>"
+Then The customer get a car insurance with a premium "<prima>" 
+
+Examples:
+|sexo|edad|estado	  |permiso|prima|
+|F	 |25  |married	  |true   |2000 |
+|M	 |50  |not married|false  |600  |
+|	 |80  |			  |       |-1   |
