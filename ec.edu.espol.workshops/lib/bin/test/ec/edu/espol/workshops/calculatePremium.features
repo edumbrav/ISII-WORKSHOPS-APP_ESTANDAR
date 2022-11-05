@@ -1,0 +1,16 @@
+Feature: Calculate the insurance prime for a customer
+
+Scenario: The customer obtains insurance with a very high premium
+Given The customer is a male 
+When Calculate the premium
+Then The customer obtains the insurance with a premium of 2000
+
+Scenario Outline: The customer obtains or not an insurance
+Given The customer is a "<sexo>" 
+Then The customer get a car insurance with a premium "<prima>" 
+
+Examples:
+|sexo|prima|
+|F	 |2000 |
+|M	 |600  |
+|	 |-1   |

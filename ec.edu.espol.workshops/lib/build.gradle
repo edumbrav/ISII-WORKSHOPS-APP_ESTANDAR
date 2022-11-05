@@ -46,4 +46,4 @@ task cucumber() {
 sourceSets.test.output
  args = ['--plugin', 'pretty','--monochrome','--plugin', 'html:build/reports/cucumber-report.html','--glue', 'ec/edu/espol/workshops', 'src/test/resources/ec/edu/espol/workshops/']
  }
- }
+ }}
