@@ -6,7 +6,7 @@ public class Main {
 		Customer c = new Customer(89,'F',"not married", false);
 		boolean valor = CarInsurance.comprobar(c);
 		if(valor && c.isPermiso()) {
-			c.setPrima(500);
+			c.setPrima(600);
 			CarInsurance.calcularPrima(c);
 		}else {
 			c.setPrima(-1);
